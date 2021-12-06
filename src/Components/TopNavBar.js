@@ -1,6 +1,6 @@
 import React from "react";
 import TopLogo from "../Icons/NewsLogo.svg";
-import { Navbar, NavbarBrand, NavbarText } from "reactstrap";
+import { Navbar, NavbarBrand } from "reactstrap";
 
 function TopNavBar() {
   return (
@@ -12,8 +12,8 @@ function TopNavBar() {
         style={{ justifyContent: "flex-start" }}
       >
         <NavbarBrand>
-          <img src={TopLogo} className = 'TopLogo'></img>
-          Short News
+          <img src={TopLogo} className = 'TopLogo' alt="Logo" ></img>
+          Top-25 News
         </NavbarBrand>
       </Navbar>
     </div>

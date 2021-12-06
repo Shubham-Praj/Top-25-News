@@ -15,7 +15,6 @@ function App() {
     );
     const data = await res.json();
     setnews(data.articles);
-    console.log(news);
   }
 
   useEffect(() => {

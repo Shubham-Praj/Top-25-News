@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import { Nav, NavItem, NavLink } from "reactstrap";
-import elogo from "../Icons/earth.svg";
+//import elogo from "../Icons/earth.svg";
 
 function NewsTabs({ getnews }) {
   const tabNames = [
-    { tab: "All", imgSrc: elogo },
-    { tab: "National", imgSrc: elogo },
-    { tab: "Business", imgSrc: elogo },
-    { tab: "Sports", imgSrc: elogo },
-    { tab: "World", imgSrc: elogo },
-    { tab: "Politics", imgSrc: elogo },
-    { tab: "Technology", imgSrc: elogo },
-    { tab: "Startup", imgSrc: elogo },
-    { tab: "Entertainment", imgSrc: elogo },
-    { tab: "Science", imgSrc: elogo },
-    { tab: "Automobile", imgSrc: elogo },
+    { tab: "All" },
+    { tab: "National" },
+    { tab: "Business" },
+    { tab: "Sports" },
+    { tab: "World" },
+    { tab: "Politics" },
+    { tab: "Technology" },
+    { tab: "Startup" },
+    { tab: "Entertainment" },
+    { tab: "Science" },
+    { tab: "Automobile" },
   ];
   const [activeTab, setactiveTab] = useState("all");
 
@@ -31,9 +31,13 @@ function NewsTabs({ getnews }) {
           return (
             <NavItem key={index}>
               <NavLink
-                className={activeTab === singleTab.tab ? "active SelectedTab" : " "}
+                className={
+                  activeTab === singleTab.tab ? "active SelectedTab" : " "
+                }
                 style={{ cursor: "pointer" }}
-                onClick={(e) => {setData(e)}}
+                onClick={(e) => {
+                  setData(e);
+                }}
               >
                 {singleTab.tab}
               </NavLink>

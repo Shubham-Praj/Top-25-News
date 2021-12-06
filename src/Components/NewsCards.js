@@ -17,6 +17,7 @@ function NewsCards({ newdata }) {
             href={newdata.read_more}
             style={{ textDecoration: "none" }}
             target="_blank"
+            rel = "noreferrer"
           >
             <CardTitle tag="h5">{newdata.title}</CardTitle>
           </a>
