@@ -4,8 +4,6 @@
   margin-right: 5px;
 }
 
-
-
 .cardHolder {
   margin-top: 15px;
   display: flex;
@@ -18,15 +16,30 @@
   display: flex;
   max-width: 30vw;
   margin: 10px;
-  max-height:fit-content;
+  max-height: fit-content;
 }
 
-.newstabs{
+.newstabs {
   display: flex;
   justify-content: space-evenly;
 }
 
-.SelectedTab{
+.SelectedTab {
   color: coral;
   font-weight: bold;
+}
+
+@media(max-width : 768px){
+
+  .newstabs{
+    justify-content: flex-start;
+  }
+
+  .cardHolder{
+    flex-direction: column;
+  }
+
+  .InLayoutCard{
+    max-width: max-content;
+  }
 }
